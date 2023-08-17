@@ -1,0 +1,73 @@
+@import "scss/fonts";
+@import "scss/icomoon";
+
+$fontFamily: "Quicksand";
+$fontSize: 16;
+//</Шрифт по умолчанию>==========================================================================================
+
+//</ШРИФТЫ>=======================================================================================================
+
+//<ПЕРЕМЕННЫЕ>===========================================================================================================
+$minWidth: 320px;
+$maxWidth: 1440;
+$maxWidthContainer: 1234;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$mainColor: #8d96bd;
+$titleColor: #3d4f9f;
+
+@import "scss/null";
+
+body {
+	color: $mainColor;
+	font-weight: 500;
+
+	&._lock {
+		overflow: hidden;
+	}
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.page {
+	flex: 1 1 auto;
+}
+
+._container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+._btn-main {
+	background: #d2e1ff;
+	border-radius: 2px;
+	padding: 14px 20px;
+	font-size: 12.5px;
+	line-height: calc(16px / 13px * 100%);
+	font-weight: 700;
+	color: #3a79ff;
+	letter-spacing: 0.8px;
+}
+._mini-title {
+	font-family: "Roboto";
+	font-weight: 500;
+	font-size: 10px;
+	line-height: calc(12px / 10px * 100%);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: $titleColor;
+}
+
+@import "scss/header";
+@import "scss/footer";
+@import "scss/sections";
